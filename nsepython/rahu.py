@@ -42,8 +42,7 @@ if(mode=='local'):
                 s = requests.session()
 
                 payload2 = "https://www.nseindia.com"
-                response = s.get(payload2, headers=headers)
-
+                output2 = s.get(payload2,headers=headers)
                 output = s.get(payload,headers=headers).json()
         return output
 
